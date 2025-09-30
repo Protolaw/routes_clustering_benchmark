@@ -1,0 +1,13 @@
+search:
+  iteration_limit: 1000
+expansion:
+  uspto:
+    - /{pathway}/routes_clustering_benchmark/data/uspto_model.onnx
+    - /{pathway}/routes_clustering_benchmark/data/uspto_templates.csv.gz
+  ringbreaker:
+    - /{pathway}/routes_clustering_benchmark/data/uspto_ringbreaker_model.onnx
+    - /{pathway}/routes_clustering_benchmark/data/uspto_ringbreaker_templates.csv.gz
+filter:
+  uspto: /{pathway}/routes_clustering_benchmark/data/uspto_filter_model.onnx
+stock:
+  zinc: /{pathway}/routes_clustering_benchmark/data/zinc_stock.hdf5
